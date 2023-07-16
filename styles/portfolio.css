@@ -68,9 +68,9 @@ nav a {
 /* header related styles */
 .header {
   background-color: #fff8f3;
-  background-image: url("../images/header_bg.png");
+  background-image: url("../images/header_bg.png"), url("../images/developer.png");
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-position: bottom right, top left;
 }
 
 .banner {
@@ -80,11 +80,7 @@ nav a {
   justify-content: space-between;
 }
 
-.developer-text{
-  margin-left: -100px;
-  margin-right: 50px;
 
-}
 
 .banner-content {
   max-width: 500px;
@@ -238,4 +234,48 @@ textarea {
   background: #FFF;
   border: 0;
   width: 100%;
+}
+
+
+/* mobile devices */
+@media screen and (max-width: 576px) {
+
+  .header{
+    background-image: none;
+  }
+
+  .btn-primary{
+    margin-bottom: 5px;
+  }
+  nav, .banner, .skills-container, .resume-container, footer, .about-info-container{
+    flex-direction: column;
+  }
+
+  #wid-des{
+    padding: 20px;
+  }
+
+  footer, .about{
+    padding: 10px;
+  }
+
+  .footer-column {
+    width: 100%;
+}
+
+.contact input[type="text"], .contact input[type="email"], 
+textarea {
+  width: 80%;
+}
+
+
+  
+}
+
+/* tablet devices */
+@media screen and (min-width: 576px) and (max-width:960px){
+  footer{
+    padding: 30px;
+  }
+  
 }
