@@ -50,7 +50,7 @@ nav-title {
   font-weight: 800;
 }
 
-nav > ul {
+nav>ul {
   display: flex;
   align-items: center;
 }
@@ -157,6 +157,7 @@ main {
 .skill-description {
   color: #757575;
 }
+
 /* resume section styles */
 
 .resume-container {
@@ -218,11 +219,12 @@ footer {
   width: 50%;
 }
 
-.social-links a{
+.social-links a {
   margin-right: 25px;
 }
 
-.contact input[type="text"], .contact input[type="email"], 
+.contact input[type="text"],
+.contact input[type="email"],
 textarea {
   display: block;
   margin-bottom: 25px;
@@ -240,42 +242,64 @@ textarea {
 /* mobile devices */
 @media screen and (max-width: 576px) {
 
-  .header{
+  .header {
     background-image: none;
   }
 
-  .btn-primary{
+  .banner .profile-pic {
+    width: 100%;
+  }
+
+  .btn-primary {
     margin-bottom: 5px;
   }
-  nav, .banner, .skills-container, .resume-container, footer, .about-info-container{
+
+  nav,
+  nav>ul,
+  .banner,
+  .skills-container,
+  .resume-container,
+  footer,
+  .about-info-container {
     flex-direction: column;
   }
 
-  #wid-des{
+  nav>ul {
+    gap: 10px;
+  }
+
+  #wid-des,
+  .banner {
     padding: 20px;
   }
 
-  footer, .about{
+  footer,
+  .about {
     padding: 10px;
   }
 
   .footer-column {
     width: 100%;
-}
+  }
 
-.contact input[type="text"], .contact input[type="email"], 
-textarea {
-  width: 80%;
-}
+  .contact input[type="text"],
+  .contact input[type="email"],
+  textarea {
+    width: 80%;
+  }
 
 
-  
+
 }
 
 /* tablet devices */
-@media screen and (min-width: 576px) and (max-width:960px){
-  footer{
+@media screen and (min-width: 576px) and (max-width:960px) {
+  footer {
     padding: 30px;
   }
-  
+
+  .btn-primary {
+    margin-bottom: 5px;
+  }
+
 }
